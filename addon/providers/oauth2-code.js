@@ -81,6 +81,7 @@ var Oauth2 = Provider.extend({
 
     if (!state) {
       state = randomUrlSafe(16);
+      // eslint-disable-next-line ember/no-side-effects
       this.set('_randomState', state);
     }
 
